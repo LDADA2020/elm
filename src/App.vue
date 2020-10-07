@@ -15,7 +15,6 @@
     <router-view></router-view>
   </div>
 </template>
-
 <script>
 import sellerData from '../public/json/seller';
 import Header from "./components/Header";

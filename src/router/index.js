@@ -5,7 +5,14 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
     mode: 'history',
-    routes: [
+    routes: [{
+            path: '/',
+            redirect: '/goods'
+        }, {
+            path: '/goods',
+            component: () =>
+                import ('../components/Foods/index.vue')
+        }
 
         // },
         // {
